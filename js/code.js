@@ -1,7 +1,8 @@
-let jasta = document.getElementById('cuenta').Value;
-
+resultado = 'cuenta';
+piramide = '';
 for (var i = 0; i < 9; i++) {
-
+    piramide += "#";
+    resultado += "<p>" + piramide + "</p>"
 }
 
-header("Location:../index.html.$totalpropi");
+innerHTML = resultado;

@@ -16,32 +16,27 @@
     <form method="POST">
         Introduce un numero... <br>
         <input type="number" name="cuenta" placeholder="X">
-        <p><input type="submit" value="Generar" name="submit"></p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = resultado">
+Click</button>
 
 
         <p id="demo"></p>
 
         <script>
+            var nombre;
+            nombre = prompt('Ingrese un numero:', '');
 
-            resultado='cuenta';
-            piramide='';
-            for(){
+            resultado = '#';
+            piramide = '#';
+            for (var i = 1; i < nombre; i++) {
                 piramide += "#";
-                resultado += "<p>"+piramide+"</p>"
+                resultado += "<p>" + piramide + "</p>"
             }
 
             innerHTML = resultado;
-
-            /*  
-            let text = "";
-
-            for (let i = 0; i < 5; i++) {
-                text += "The number is " + i + "<br>";
-            }
-
-            document.getElementById("demo").innerHTML = text;
-            */
+            // -------------------------------------------- //
         </script>
+
     </form>
 
 </body>
